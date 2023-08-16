@@ -11,6 +11,8 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs.init(process.env.REACT_APP_ID);
     const formMess = document.querySelector(".form-message");
 
     emailjs
