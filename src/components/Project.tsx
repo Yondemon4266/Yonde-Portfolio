@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { projectsData } from "../data/projectsData";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Project = ({ projectNumber }: any) => {
   const [currentProject] = useState(projectsData[projectNumber]);
-  const [left, setLeft]:any = useState();
-  const [top, setTop]:any = useState();
-  const [size, setSize]:any = useState();
-  
+  const [left, setLeft]: any = useState();
+  const [top, setTop]: any = useState();
+  const [size, setSize]: any = useState();
 
   useEffect(() => {
     setLeft(Math.floor(Math.random() * 200 + 700) + "px");
@@ -23,18 +22,18 @@ const Project = ({ projectNumber }: any) => {
   const variants = {
     initial: {
       opacity: 0,
-      transition: {duration: 0.5},
+      transition: { duration: 0.5 },
       x: 200,
     },
-    visible : {
+    visible: {
       opacity: 1,
-      x: 0
+      x: 0,
     },
     exit: {
       opacity: 0.4,
-      transition: {duration: 0.4},
+      transition: { duration: 0.4 },
       x: -800,
-    }
+    },
   };
 
   const imgAnim = {
@@ -47,11 +46,18 @@ const Project = ({ projectNumber }: any) => {
       opacity: 1,
       x: 0,
       y: 0,
-    }
-  }
+    },
+  };
 
   return (
-    <motion.div className="project-main" initial="initial" animate="visible" exit="exit" transition={transition} variants={variants}>
+    <motion.div
+      className="project-main"
+      initial="initial"
+      animate="visible"
+      exit="exit"
+      transition={transition}
+      variants={variants}
+    >
       <div className="project-content">
         <h1>{currentProject.title}</h1>
         <p>{currentProject.date}</p>
@@ -61,19 +67,49 @@ const Project = ({ projectNumber }: any) => {
           ))}
         </ul>
       </div>
-      <motion.div className="img-content" initial="initial" animate="visible" variants={imgAnim} transition={{duration: 1.2}}>
-        <div className="img-container hover">
-            <span>
-                <h3>{currentProject.title}</h3>
-                <p>{currentProject.infos}</p>
-            </span>
-            <img src={currentProject.img} alt={`projet ${currentProject.title}`} className="img"/>
+      <motion.div
+        className="img-content"
+        initial="initial"
+        animate="visible"
+        variants={imgAnim}
+        transition={{ duration: 1.2 }}
+      >
+        <div className="img-container hover" style={{ height: "auto" }}>
+          <span>
+            <h3>{currentProject.title}</h3>
+            <p>{currentProject.infos}</p>
+          </span>
+          {projectNumber == 0 ? (
+            <img
+              src={currentProject.img}
+              alt={`projet ${currentProject.title}`}
+              className="img"
+              style={{ height: "auto" }}
+            />
+          ) : (
+            <img
+              src={currentProject.img}
+              alt={`projet ${currentProject.title}`}
+              className="img"
+              style={{ height: "auto" }}
+            />
+          )}
         </div>
         <div className="button-container">
-            <a href={currentProject.link} target='_blank' rel="noopener noreferrer" className="hover"><div className="button">Voir le site</div></a>
+          <a
+            href={currentProject.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover"
+          >
+            <div className="button">Voir le site</div>
+          </a>
         </div>
       </motion.div>
-      <span className="random-circle" style={{left, top, transform: size}}></span>
+      <span
+        className="random-circle"
+        style={{ left, top, transform: size }}
+      ></span>
     </motion.div>
   );
 };
