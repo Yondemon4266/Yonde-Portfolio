@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: "Yonde-Mangacollec",
     date: "Septembre 2023",
-    languages: ["React", "Sass"],
+    languages: ["React", "Sass", "Express"],
     infos:
       "Copie de Mangacollec avec ajouts de fonctionnalités comme la recherche de profils amis et comparaison de collection",
     img: "./assets/img/projet-2.png",
