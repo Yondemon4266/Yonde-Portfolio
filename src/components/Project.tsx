@@ -79,7 +79,7 @@ const Project = ({ projectNumber }: any) => {
             <h3>{currentProject.title}</h3>
             <p>{currentProject.infos}</p>
           </span>
-          {projectNumber === 0 ? (
+          {projectNumber === 0  ? (
             <img
               src={currentProject.img}
               alt={`projet ${currentProject.title}`}
