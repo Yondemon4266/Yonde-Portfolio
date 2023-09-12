@@ -41,12 +41,17 @@
     color: $black;
   }
 
+  li {
+    @media screen and (max-width:550px) {
+      font-size: 15px;
+    }
+  }
   .nav-portfolio {
+    position: relative;
     cursor: pointer;
     display: flex;
     // padding-right: 6rem;
     transition: .5s;
-
     &:hover .nav-projects,
     .nav-projects:hover {
 
@@ -67,7 +72,10 @@
       transform: translateX(70px);
       transition: .3s ;
       perspective: 500px;
-
+      @media screen and (max-width:550px) {
+        right: -60px;
+        top: 0;
+      }
       li {
         transform: rotatey(30deg) scaleX(1.2);
         transform-origin: center;

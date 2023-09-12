@@ -20,5 +20,8 @@
 
   .right {
     right: -24px;
+    @media screen and (max-width: 550px){
+      right: -15px;
+    }
   }
 }
