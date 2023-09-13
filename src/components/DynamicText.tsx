@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
 
 const DynamicText = () => {
-    console.log(window.innerHeight);
-    
 
     useEffect(() => {
-        if (window.innerHeight > 1000) {
         const target = document.getElementById('text-target');
         let array = ["simple", "clear", "smart", "strong"];
         let wordIndex = 0;
@@ -42,15 +39,12 @@ const DynamicText = () => {
             }, 80)
         }
         loop();
-    }
     }, [])
     return (
-        <>
-        {window.innerHeight > 1000 ? (<span className="dynamic-text"><span>simply</span>
-        <span id="text-target"></span></span>): (<span className="dynamic-text"><span>simply smart</span>
-        <span id="text-target"></span></span>) }
-        </>
-        
+        <span className="dynamic-text">
+            <span>simply</span>
+            <span id="text-target"></span>
+        </span>
     );
 };
 
