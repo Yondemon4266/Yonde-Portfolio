@@ -31,7 +31,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Creative Dev",
+    title: "Facebook Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
     infos:
