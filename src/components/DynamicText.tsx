@@ -5,7 +5,7 @@ const DynamicText = () => {
     
 
     useEffect(() => {
-        if (window.innerHeight > 700) {
+        if (window.innerHeight > 1000) {
         const target = document.getElementById('text-target');
         let array = ["simple", "clear", "smart", "strong"];
         let wordIndex = 0;
