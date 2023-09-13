@@ -46,7 +46,7 @@ const DynamicText = () => {
     }, [])
     return (
         <>
-        {window.innerHeight > 700 ? (<span className="dynamic-text"><span>simply</span>
+        {window.innerHeight > 1000 ? (<span className="dynamic-text"><span>simply</span>
         <span id="text-target"></span></span>): (<span className="dynamic-text"><span>simply smart</span>
         <span id="text-target"></span></span>) }
         </>
