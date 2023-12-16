@@ -7,7 +7,7 @@ export const projectsData = [
     infos:
       "Ce projet est une copie de Mangacollec avec ajouts de fonctionnalités comme la recherche de profils amis, comparaison de collections, ajouts de marque-page etc. Apprentissage du backend avec Express, NodeJS.",
     img: "./assets/img/projet-2.png",
-    link: "https://yonde-mangacollec.netlify.app/",
+    link: "https://yondemangacollec.netlify.app/",
   },
   {
     id: 2,
@@ -24,8 +24,7 @@ export const projectsData = [
     title: "Deezer Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
-    infos:
-      "Entraînement en CSS et Javascript.",
+    infos: "Entraînement en CSS et Javascript.",
     img: "./assets/img/projet-3.png",
     link: "https://yonde-deezer-clone.netlify.app/",
   },
