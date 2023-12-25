@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Yonde-Mangacollec",
+    title: "Hinokuni Animes",
     date: "Septembre 2023",
     languages: ["React", "Sass", "Express", "TypeScript"],
     infos:
