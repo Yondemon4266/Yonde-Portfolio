@@ -7,7 +7,7 @@ export const projectsData = [
     infos:
       "Ce projet est une copie de Mangacollec avec ajouts de fonctionnalités comme la recherche de profils amis, comparaison de collections, ajouts de marque-page etc. Apprentissage du backend avec Express, NodeJS.",
     img: "./assets/img/projet-2.png",
-    link: "https://yondemangacollec.netlify.app/",
+    link: "https://hinokuni.netlify.app/",
   },
   {
     id: 2,
