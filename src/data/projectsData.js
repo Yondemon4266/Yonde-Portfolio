@@ -11,6 +11,16 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: "Yonde-Factures",
+    date: "Décembre 2023",
+    languages: ["Typescript", "OOP", "Bootstrap"],
+    infos:
+      "Projet permettant de générer des factures et devis et permet de les faire imprimer et les visualiser. Ce projet est axé programmation orienté objet et sur Typescript.",
+    img: "./assets/img/projet-5.png",
+    link: "https://yonde-facture.netlify.app/",
+  },
+  {
+    id: 3,
     title: "Yonde-Cinema",
     date: "Août 2023",
     languages: ["React", "Sass"],
@@ -20,7 +30,7 @@ export const projectsData = [
     link: "https://yonde-cinema-react.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Deezer Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
@@ -29,7 +39,7 @@ export const projectsData = [
     link: "https://yonde-deezer-clone.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Facebook Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
