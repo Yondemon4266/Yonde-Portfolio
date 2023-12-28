@@ -11,6 +11,15 @@ export const projectsData = [
   },
   {
     id: 1,
+    title: "Yoga Routine",
+    date: "Juin 2023",
+    languages: ["Css", "Javascript, HTML"],
+    infos: "Entrainement en programmation orienté objet OOP",
+    img: "./assets/img/projet-7.png",
+    link: "https://yonde-yogaroutine.netlify.app/",
+  },
+  {
+    id: 2,
     title: "Floppy Bird",
     date: "Juin 2023",
     languages: ["Css", "Typescript, HTML"],
@@ -19,7 +28,7 @@ export const projectsData = [
     link: "https://yonde-floppybird.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Yonde-Factures",
     date: "Décembre 2023",
     languages: ["Typescript", "OOP", "Bootstrap"],
@@ -29,7 +38,7 @@ export const projectsData = [
     link: "https://yonde-facture.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Yonde-Cinema",
     date: "Août 2023",
     languages: ["React", "Sass"],
@@ -39,7 +48,7 @@ export const projectsData = [
     link: "https://yonde-cinema-react.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Deezer Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
@@ -48,7 +57,7 @@ export const projectsData = [
     link: "https://yonde-deezer-clone.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Facebook Clone",
     date: "Août 2023",
     languages: ["Css", "Javascript"],
