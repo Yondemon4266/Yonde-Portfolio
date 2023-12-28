@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    id: 1,
+    id: 0,
     title: "Hinokuni Animes",
     date: "Septembre 2023",
     languages: ["React", "Sass", "Express", "TypeScript"],
@@ -8,6 +8,15 @@ export const projectsData = [
       "Ce projet est une copie de Mangacollec avec ajouts de fonctionnalités comme la recherche de profils amis, comparaison de collections, ajouts de marque-page etc. Apprentissage du backend avec Express, NodeJS.",
     img: "./assets/img/projet-2.png",
     link: "https://hinokuni.netlify.app/",
+  },
+  {
+    id: 1,
+    title: "Floppy Bird",
+    date: "Juin 2023",
+    languages: ["Css", "Typescript, HTML"],
+    infos: "Projet de jeu, entraînement avec Canvas (javascript)",
+    img: "./assets/img/projet-6.png",
+    link: "https://yonde-floppybird.netlify.app/",
   },
   {
     id: 2,
