@@ -10,6 +10,16 @@ export const projectsData = [
     link: "https://hinokuni.netlify.app/",
   },
   {
+    id: 10,
+    title: "LearnLeague",
+    date: "Juin 2023",
+    languages: ["Tailwind", "TypeScript, DataDragonAPI"],
+    infos:
+      "Projet à propos du jeu League of legends, qui consiste à visualiser et ajouter vos champions favoris et personnaliser leurs objets...",
+    img: "./assets/img/projet-8.png",
+    link: "https://learnleague.netlify.app/",
+  },
+  {
     id: 1,
     title: "Yoga Routine",
     date: "Juin 2023",
